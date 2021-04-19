@@ -39,7 +39,7 @@ public class AddItemWindow extends BasicWindow {
 		
 		Panel buttonPanel = new Panel(new GridLayout(2));
 		
-		new Button("Add Item", new Runnable() {
+		new Button("Confirm", new Runnable() {
 			public void run() {
 				try {
 					Window activeWindow = textGUI.getActiveWindow();

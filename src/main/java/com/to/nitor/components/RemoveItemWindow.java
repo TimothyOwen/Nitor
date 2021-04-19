@@ -33,7 +33,7 @@ public class RemoveItemWindow extends BasicWindow {
 		
 		Panel buttonPanel = new Panel(new GridLayout(2));
 		
-		new Button("Remove Item", new Runnable() {
+		new Button("Confirm", new Runnable() {
 			public void run() {
 				try {
 					
