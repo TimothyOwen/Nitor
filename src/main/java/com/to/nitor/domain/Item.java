@@ -1,4 +1,4 @@
-package domain;
+package com.to.nitor.domain;
 
 public class Item {
 	private String Name;
