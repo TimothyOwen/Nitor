@@ -19,7 +19,9 @@ public class Runner {
     public static void main(String[] args) throws IOException {
     	
         DefaultTerminalFactory terminalFactory = new DefaultTerminalFactory();
+        
         Terminal terminal = null;
+        
         Screen screen = null;      
 
         try {
