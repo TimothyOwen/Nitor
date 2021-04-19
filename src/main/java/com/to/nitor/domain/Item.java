@@ -2,12 +2,12 @@ package com.to.nitor.domain;
 
 public class Item {
 	private String Name;
-	private String Id;
-	private int Size;
-	public void Item(String Name, String Id, int Size) {
+	private Long Quantity;
+	private Long Id;
+	public Item(String Name, Long Quantity, Long Id) {
 		this.Name = Name;
 		this.Id = Id;
-		this.Size = Size;
+		this.Quantity = Quantity;
 	}
 	public String getName() {
 		return this.Name;
@@ -15,16 +15,16 @@ public class Item {
 	public void setName(String Name) {
 		this.Name = Name;
 	}
-	public String getId() {
+	public Long getQuantity() {
+		return this.Quantity;
+	}
+	public void setQuantity(Long Quantity) {
+		this.Quantity = Quantity;
+	}
+	public Long getId() {
 		return this.Id;
 	}
-	public void setId(String Id) {
+	public void setId(Long Id) {
 		this.Id = Id;
-	}
-	public int getSize() {
-		return this.Size;
-	}
-	public void setSize(int Size) {
-		this.Size = Size;
 	}
 }
