@@ -1,6 +1,6 @@
 ### <u>**Nitor**</u>
 
-Supply management user interface for crop management.
+Supply management user interface for crop supply management.
 
 ![menu](docs/menu.png)
 
