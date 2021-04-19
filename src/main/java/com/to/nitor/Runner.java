@@ -37,7 +37,7 @@ public class Runner {
         }
         catch (IOException e) {
         	
-            e.printStackTrace();
+            System.out.println("IO failed: "+e);
             
         }
         finally {
@@ -49,7 +49,7 @@ public class Runner {
                 }
                 catch(IOException e) {
                 	
-                    e.printStackTrace();
+                	System.out.println("IO failed: "+e);
                     
                 }
             }
