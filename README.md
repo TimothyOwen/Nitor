@@ -1,6 +1,6 @@
 ### <u>**Nitor**</u>
 
-Supply management user interface for crop management.
+Supply management user interface for crop supply management.
 
 ![menu](docs/menu.png)
 
@@ -14,7 +14,9 @@ Clone git repo and run fat .jar.
 
 ### <u>Build</u>
 
-Built using [Lanterna](https://github.com/mabe02/lanterna).
+Built using [Lanterna](https://github.com/mabe02/lanterna).  
+
+Dependency management using Maven.
 
 
 
