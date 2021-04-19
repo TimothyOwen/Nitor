@@ -15,6 +15,7 @@ Clone git repo and run fat .jar.
 ### <u>Build</u>
 
 Built using [Lanterna](https://github.com/mabe02/lanterna).
+Dependency management through Maven.
 
 
 
