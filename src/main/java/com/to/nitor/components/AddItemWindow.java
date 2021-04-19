@@ -25,7 +25,7 @@ public class AddItemWindow extends BasicWindow {
 		mainPanel.setLayoutManager(new LinearLayout(Direction.VERTICAL));
 		
 		Panel containerPanel = new Panel(new GridLayout(2));
-		Label nameLabel = new Label("Name");
+		Label nameLabel = new Label("Crop");
 		final TextBox nameTextBox = new TextBox();
 		containerPanel.addComponent(nameLabel);
 		containerPanel.addComponent(nameTextBox);
