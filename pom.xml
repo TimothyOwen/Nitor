@@ -3,6 +3,10 @@
   <groupId>com.to.nitor</groupId>
   <artifactId>Nitor</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
   	<dependency>
         <groupId>com.googlecode.lanterna</groupId>
@@ -25,5 +29,43 @@
 			<artifactId>log4j-api</artifactId>
 			<version>2.13.3</version>
 		</dependency>
-   </dependencies>
+  </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.to.nitor.Runner</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+        <plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-assembly-plugin</artifactId>
+		    <executions>
+		        <execution>
+		        <phase>package</phase>
+		        <goals>
+		            <goal>single</goal>
+		        </goals>
+		        <configuration>
+		            <archive>
+		                <manifest>
+		                    <mainClass>com.to.nitor.Runner</mainClass>
+		                </manifest>
+		            </archive>
+		            <descriptorRefs>
+		                <descriptorRef>jar-with-dependencies</descriptorRef>
+		            </descriptorRefs>
+		        </configuration>
+		        </execution>
+		    </executions>
+		</plugin>
+    </plugins>
+  </build>
 </project>
