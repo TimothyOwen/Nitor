@@ -61,5 +61,21 @@ public class DBUtils {
 		return new ArrayList<>();
 	}
 	
+	public void createItem(Item item) {
+		try(Statement statement = conn.createStatement()){
+			statement.executeUpdate("INSERT INTO Inventory (Name, Quantity) VALUES ('"+item.getName()+"','"+item.getQuantity()+"')");
+		} catch(Exception e) {
+			System.out.println("Item creation failed: "+e);
+		}
+	}
+	
+	public void removeItem(Long id) {
+		try(Statement statement = conn.createStatement()){
+			statement.executeUpdate("DELETE FROM Inventory WHERE Id = "+id+";");
+		} catch(Exception e) {
+			System.out.println("Item removal failed: "+e);
+		}
+	}
+	
 }
 
