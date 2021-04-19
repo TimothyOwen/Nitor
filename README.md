@@ -1,6 +1,6 @@
 ### <u>**Nitor**</u>
 
-Supply management user interface for crop supply management.
+Supply management user interface for crop supply management. 
 
 ![menu](docs/menu.png)
 
@@ -23,4 +23,6 @@ Built using [Lanterna](https://github.com/mabe02/lanterna).
 Dependency management using Maven.
 
 
+### <u>**Connection**</u>
 
+Connects to local mysql instance at "jdbc:mysql://localhost:3306/nitor".
