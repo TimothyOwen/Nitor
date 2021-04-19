@@ -23,4 +23,6 @@ Built using [Lanterna](https://github.com/mabe02/lanterna).
 Dependency management using Maven.
 
 
+### <u>**Connection**</u>
 
+Connects to local mysql instance at "jdbc:mysql://localhost:3306/nitor".
